@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Momentum</title>
+</head>
+<body>
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
+        <div class="login-header">What' your name?</div>
+        <input type="text" required>
+        <span class="highlight"></span>
+		<span class="bar"></span>
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+    <div class="todo">
+        <form id="todo-form">
+            <input type="text" required>
+		    <span class="highlight"></span>
+		    <span class="bar"></span>
+		    <label>todo List</label>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    <div id="quote">
+        <span class="quote-quote"></span>
+        <br>
+        <span class="quote-author"></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="greetings.js"></script>
+    <script src="clock.js"></script>
+    <script src="quotes.js"></script>
+    <script src="backgrounds.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        #greeting {
+            font-family: 'Indie Flower', cursive;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
+        #quote, #clock, #weather, .login-header {
+            font-family: 'Noto Serif JP', serif;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+        #todo-list, label {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</body>
+</html>
