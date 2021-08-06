@@ -9,10 +9,11 @@ body {
 #todo-list {
     list-style:none;
     color: peachpuff;
-    font-size: 18px;
+    font-size: 15px;
 }
 #todo-list button {
-    border-radius: 12px;
+    border-style: none;
+    background: none;
 }
 #todo-list button:hover {
     cursor: pointer;
@@ -58,32 +59,34 @@ body {
 #todo-form {
     position: relative;
     box-sizing:border-box;
+    margin-top: -50px;
+}
+#todo-form ::placeholder {
+    color: gray;
+    font-weight: bold;
+}
+#todo-form input:focus {
+    outline: none;
+}
+#login-form input:focus {
+    outline: none;
 }
 input {
     padding:10px 10px 10px 5px;
     width:300px;
     border:none;
     border-bottom:1px solid #757575;
-}
-label {
-    color:#999; 
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition:0.2s ease all;
-}
-input:focus ~ label, input:valid ~ label    {
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
+    font-size:15px;
+    margin-top: 15px;
+    opacity: 0.5;
+    position: relative;
 }
 .bar  { 
     position:relative; 
     display:block; 
-    width:300px;
+    max-width:315px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .bar:before, .bar:after   {
     content:'';
@@ -91,7 +94,7 @@ input:focus ~ label, input:valid ~ label    {
     width:0;
     bottom:1px; 
     position:absolute;
-    background:#5264AE; 
+    background:#1d8f76; 
     transition:0.2s ease all; 
 }
 .bar:before {
@@ -111,16 +114,4 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     left:0;
     pointer-events:none;
     opacity:0.5;
-}
-@-webkit-keyframes inputHighlighter {
-    from { background:#5264AE; }
-    to  { width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-    from { background:#5264AE; }
-    to  { width:0; background:transparent; }
-}
-@keyframes inputHighlighter {
-    from { background:#5264AE; }
-    to  { width:0; background:transparent; }
 }

@@ -11,18 +11,15 @@
 <body>
     <h2 id="clock">00:00:00</h2>
     <form class="hidden" id="login-form">
-        <div class="login-header">What' your name?</div>
+        <div class="login-header">What's your name?</div>
         <input type="text" required>
-        <span class="highlight"></span>
 		<span class="bar"></span>
     </form>
     <h1 class="hidden" id="greeting"></h1>
     <div class="todo">
         <form id="todo-form">
-            <input type="text" required>
-		    <span class="highlight"></span>
+            <input type="text" placeholder="Write ToDo" required>
 		    <span class="bar"></span>
-		    <label>todo List</label>
         </form>
         <ul id="todo-list"></ul>
     </div>
@@ -45,7 +42,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-        #greeting {
+        #greeting, #todo-form input {
             font-family: 'Indie Flower', cursive;
         }
     </style>
@@ -57,7 +54,7 @@
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-        #todo-list, label {
+        #todo-list {
             font-family: 'Playfair Display', serif;
         }
     </style>
