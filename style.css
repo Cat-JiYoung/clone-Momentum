@@ -40,8 +40,7 @@ body {
     font-size: 25px;
     display: flex;
     right: 20px;
-    top: 1px
-    
+    top: 1px;
 }
 #greeting {
     font-size: 60px;
@@ -59,7 +58,7 @@ body {
 #todo-form {
     position: relative;
     box-sizing:border-box;
-    margin-top: -50px;
+    margin-top: -20px;
 }
 #todo-form ::placeholder {
     color: gray;
